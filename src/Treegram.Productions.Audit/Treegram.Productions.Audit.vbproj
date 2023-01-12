@@ -113,6 +113,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\actions\Treegram.GeomFunctions.dll</HintPath>
     </Reference>
+    <Reference Include="Treegram.GeomFunctions.CSharp">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\actions\Treegram.GeomFunctions.CSharp.dll</HintPath>
+    </Reference>
     <Reference Include="Treegram.GeomLibrary, Version=0.8.4.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\actions\Treegram.GeomLibrary.dll</HintPath>
