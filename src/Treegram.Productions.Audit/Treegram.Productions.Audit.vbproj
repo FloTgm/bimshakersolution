@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8640723F-C880-4B67-8C14-8B731966E2CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Treegram.Productions.Audit</RootNamespace>
+    <AssemblyName>Treegram.Productions.Audit</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\actions\</OutputPath>
+    <DocumentationFile>Treegram.Productions.Audit.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Treegram.Productions.Audit.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Docs.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\DevExpress.Docs.v22.1.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\DevExpress.Office.v22.1.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\DevExpress.Printing.v22.1.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\DevExpress.Spreadsheet.v22.1.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="M4D.Dashboard.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\M4D.Dashboard.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="M4D.Dashboard.Design">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\M4D.Dashboard.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="M4D.Deixi.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\M4D.Deixi.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="M4D.Production.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\M4D.Production.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="M4D.Treegram.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\M4D.Treegram.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="M4D.Treegram.Core.Extensions">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\M4D.Treegram.Core.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="M4D.Treegram.Design">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\M4D.Treegram.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="SharpDX.Mathematics, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\SharpDX.Mathematics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+    <Reference Include="TGM.Deixi.Services">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\TGM.Deixi.Services.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Treegram.ConstructionManagement">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\dlls\Treegram.ConstructionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Treegram.GeomFunctions, Version=0.8.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\actions\Treegram.GeomFunctions.dll</HintPath>
+    </Reference>
+    <Reference Include="Treegram.GeomLibrary, Version=0.8.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Treegram\actions\Treegram.GeomLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IFC\Analyse_Columns.vb" />
+    <Compile Include="IFC\Analyse_CurtainWalls.vb" />
+    <Compile Include="IFC\Analyse_Openings.vb" />
+    <Compile Include="IFC\Analyse_Walls.vb" />
+    <Compile Include="IFC\Create_GridBoxVisu.vb" />
+    <Compile Include="IFC\Check_WallAxis.vb" />
+    <Compile Include="RVT\Analyse_Walls.vb" />
+    <Compile Include="RVT\Check_WallAxis.vb" />
+    <Compile Include="IFC\Create_IfcInitialAudit.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RVT\Check_Units.vb" />
+    <Compile Include="RVT\Check_FamilyNames.vb" />
+    <Compile Include="RVT\Check_Warnings.vb" />
+    <Compile Include="RVT\Check_ParameterExists.vb" />
+    <Compile Include="RVT\Create_RvtAuditInitial.vb" />
+    <Compile Include="RVT\Create_FamilyTree.vb" />
+    <Compile Include="TGM\Analyse_ObjectStorey.vb" />
+    <Compile Include="TGM\Check_Attributes.vb" />
+    <Compile Include="TGM\Check_Duplicates.vb" />
+    <Compile Include="TGM\Check_Modifications.vb" />
+    <Compile Include="TGM\Check_LoiTrees.vb" />
+    <Compile Include="TGM\Check_StructuralElementsClashes.vb" />
+    <Compile Include="TGM\Check_Trade.vb" />
+    <Compile Include="TGM\Compare_WithReferences.vb" />
+    <Compile Include="TGM\Create_DynamicTrees.vb" />
+    <Compile Include="TGM\Create_BuildingAndStoreyRefs.vb" />
+    <Compile Include="TGM\Create_FileTgmBuildings.vb" />
+    <Compile Include="TGM\Define_FileTgmBuildings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\API-SDK\geomkernelbasicmodeler\src\Treegram.GeomKernel.BasicModeler.vbproj">
+      <Project>{d62e6ef9-4e31-487a-9afc-834cbe859d2f}</Project>
+      <Name>Treegram.GeomKernel.BasicModeler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Treegram.Bam.Functions.AEC\Treegram.Bam.Functions.AEC.vbproj">
+      <Project>{b89e451e-83e3-484c-b912-8c3cbd1248c5}</Project>
+      <Name>Treegram.Bam.Functions.AEC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Treegram.Bam.Functions\Treegram.Bam.Functions.vbproj">
+      <Project>{a928b8c6-f8e0-48f2-8d7d-b4f48e8ab762}</Project>
+      <Name>Treegram.Bam.Functions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Treegram.Bam.Libraries.AEC\Treegram.Bam.Libraries.AEC.vbproj">
+      <Project>{27ae6feb-d5bd-421c-997c-9009e802b517}</Project>
+      <Name>Treegram.Bam.Libraries.AEC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Treegram.Bam.Libraries.AuditFile\Treegram.Bam.Libraries.AuditFile.vbproj">
+      <Project>{b345cc0f-648b-4045-8779-4378b9bb3049}</Project>
+      <Name>Treegram.Bam.Libraries.AuditFile</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
